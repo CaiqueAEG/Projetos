@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'projeto';
+    src: url('../fontes/The Big Apple.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'apple';
+    src: url('../fontes/Apple Kids.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'destaque';
+    src: url('../fontes/Movie Title_AH.ttf') format('truetype');
+}
+
+:root {
+    --cor0: #FF5F5D;
+    --cor1: #3F7C85;
+    --cor2: #00CCBF;
+    --cor3: #72F2EB;
+    --cor4: #747E7E;
+
+    --fonte-padrao: Arial, verdana, 'sans-serif';
+    --fonte-projeto: 'projeto';
+    --fonte-apple: 'apple';
+    --fonte-dest: 'destaque';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+header {
+    background-image: linear-gradient(to bottom,var(--cor2),var(--cor1));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
+}
+
+header > h1 {
+    font-family: var(--fonte-projeto);
+    font-size: 0.8em;
+    color: var(--cor0);
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+header > h2 {
+    font-family: var(--fonte-apple);
+    font-weight: normal;
+    font-size: 3.5em;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+header > p {
+    font-family: var(--fonte-dest);
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background-color: var(--cor1);
+    padding: 8px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav > a {
+    color: var(--cor2);
+    text-decoration: none;
+    padding: 8px;
+    margin: 1px;
+    font-weight: bold;
+    
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    background-color: var(--cor0);
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 240px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+main article audio {
+    margin: auto;
+    display: block;
+    max-width: 200px;
+}
+
+main article h2 {
+    font-family: var(--fonte-apple);
+    color: var(--cor0);
+    padding: 1px;
+    font-weight: lighter;
+    text-indent: 10px;
+    border-bottom: 1px solid var(--cor1);
+}
+
+main article p {
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.8em;
+}
+
+main article img {
+    width: 100%;
+}
+
+main article .pequeno {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
+main article ul {
+    list-style-position: inside;
+    list-style-type: '\1F34E';
+}
+
+aside {
+    background-color: var(--cor2);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+aside > h3 {
+    background-color: #3F7C85;
+    margin: -20px -20px 0px -20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 5px;
+}
+
+aside > p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    list-style-type: '\1F34E';
+}
+
+aside .linha {
+    border: 1px solid var(--cor1);
+}
+
+footer {
+    background-color: var(--cor1);
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+footer a {
+    
+    color: #FF5F5D;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: normal;
+}
