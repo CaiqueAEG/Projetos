@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    background-color: black;
+}
+
+header {
+    background-color: red;
+    text-align: center;
+    color: white;
+    min-height: 150px;
+    position: relative;
+}
+
+header h1 {
+    text-shadow: 1px 1px 1px black;
+    padding-top: 60px;
+}
+
+header p {
+    font-family: 'Pacifico',cursive;
+}
+
+header img.header {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+}
+
+section#topo {
+    min-height: 800px;
+    background-image: url('../imagens/p1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+main {
+    max-width: 1300px;
+    margin: 30px auto;
+}
+
+main section#meio {
+    min-height: 800px;
+    background-image: url('../imagens/p2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+main section#fim {
+    min-height: 800px;
+    background-image: url('../imagens/p3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+main section.padrao {
+    background-color: black;
+    background-attachment: fixed;
+    min-height: 500px;
+    position: relative;
+}
+
+main section img#t {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+}
+
+main section img#t1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+main section img#t2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+main section img#m {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+main section img#m1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+main section img#m2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+}
+
+main section img#f {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+
+
