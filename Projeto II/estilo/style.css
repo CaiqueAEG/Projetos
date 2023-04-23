@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'pizzaria';
+    src: url('../fontes/PIZZARIA.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Slab:wght@100;300;400&display=swap');
+
+:root {
+    --cor0: white;
+    --cor1: goldenrod;
+    --cor2: #593E25;
+    --cor3: #A1A2A6;
+    --cor4: #F23030;
+    --cor5: #F29F05;
+
+    --font0: Arial, Verdana, Helvetica, sans-serif;
+    --font1: 'pizzaria';
+    --font2: 'Dancing Script', cursive;
+    --font3: 'Josefin Slab', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font0);
+}
+
+html, body {
+    height: 100vh;
+    background-color: #A1A2A6;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+    color: white;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-family: var(--font1);
+}
+
+header > p {
+    padding-top: 10px;
+    font-family: var(--font2);
+}
+
+header > img {
+    max-width: 200px;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+}
+
+nav {
+    background-color: var(--cor2);
+    padding: 10px;
+}
+
+nav a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: var(--cor4);
+    border-radius: 10px;
+    transition-duration: 1.2s;
+    padding: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
